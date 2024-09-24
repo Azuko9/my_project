@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}test!{% endblock %}
+
+{% block body %}
+<style>
+    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
+    .example-wrapper code { background: #555555; padding: 2px 6px; }
+</style>
+
+<div class="example-wrapper">
+    <h1>Hello {{name}}{{ controller_name }}! ✅</h1>
+
+    This friendly message is coming from:
+    <ul>
+        <li>Your controller at <code>C:/Users/azuko/my_project/src/Controller/HomeController.php</code></li>
+        <li>Your template at <code>C:/Users/azuko/my_project/templates/home/index.html.twig</code></li>
+    </ul>
+</div>
+
+{% for item in nom %}
+<h3>{{item}}</h3>
+    
+{% endfor %}
+
+{% for student in etudiant %}
+<h3>{{student.prenom}}</h3>
+<h3>{{student.nom}}</h3>
+<h3>{{student.age}}</h3>
+<h3>{{student.email}}</h3>
+{% endfor %}
+
+{{'bonjour tout le monde'}}
+
+{% endblock %}

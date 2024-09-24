@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block body %}
+<h1 class="text-4xl">Contact Page</h1>
+<a href="{{path('app_home')}}" class="btn btn-neutral btn-lg">Acceuil</a>
+
+<input
+  type="text"
+  placeholder="Type here"
+  class="input input-bordered input-secondary w-full max-w-xs" />
+  <input
+  type="text"
+  placeholder="Type here"
+  class="input input-bordered input-primary w-full max-w-xs" />
+{% endblock %}
+
